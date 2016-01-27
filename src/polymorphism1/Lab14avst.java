@@ -18,6 +18,9 @@ package polymorphism1;
 		Shape g4 = new Shape4Circle();
 		
 		
+		public void init(){
+			setSize(850,650);
+		}
 		
 		public void paint(Graphics g)
 		{
@@ -31,6 +34,14 @@ package polymorphism1;
 			
 			for (Shape shape: shapes) {
 				shape.drawShape(g);
+			}
+			
+			for (Shape shape: shapes){
+				shape.displayName(g);
+			}
+			
+			for (Shape shape: shapes){
+				shape.displayNumSides(g);
 			}
 				
 	   }
